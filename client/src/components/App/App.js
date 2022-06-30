@@ -1,6 +1,5 @@
 import Form from "../Form/Form";
 import { useState } from "react";
-import axios from "axios";
 
 let edit = false;
 
@@ -45,6 +44,7 @@ let test = {
     },
   ],
 };
+
 function App() {
   // ici on recupere les variables globales
   // comme l'user ID  et les donnees du document

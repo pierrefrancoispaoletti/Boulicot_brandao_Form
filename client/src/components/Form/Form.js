@@ -23,7 +23,6 @@ const Form = ({
   Res_Id,
   userId,
 }) => {
-  console.log(Res_Id);
   const axiosCall = async (datas) => {
     const response = await axios({
       method: "POST",
