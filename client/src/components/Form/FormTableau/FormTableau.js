@@ -34,14 +34,18 @@ const FormTableau = ({ tableau, setTableau, dataModelForTableau }) => {
   return (
     <Container>
       {tableau.length > 0 && (
-        <TableStyled border="0">
+        <TableStyled>
           <thead>
             <tr>
               {tableauKeys.map((key) => (
                 <th
                   style={{
-                    height: "34px",
+                    width: "100%",
+                    height: "35px",
                     textAlign: "left",
+                    paddingTop: "8px",
+                    borderBottom: "2px solid black",
+                    borderLeft: "2px solid black",
                   }}
                   key={key}
                 >

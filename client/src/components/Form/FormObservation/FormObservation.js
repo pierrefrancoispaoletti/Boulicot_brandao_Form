@@ -8,8 +8,8 @@ const FormObservation = ({ observation, setObservation }) => {
       <textarea
         name="observation"
         id="observation"
-        cols="80"
-        rows="10"
+        cols="40"
+        rows="3"
         value={observation}
         onChange={(e) => setObservation(e.target.value)}
       ></textarea>

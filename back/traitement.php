@@ -69,7 +69,12 @@ function Depot_Fichier($n_client, $coll_id, $indexation, $nom_fichier, $user_id,
 }
 
 // ici on récupére les données du formulaire soumis
-$datas = json_decode(file_get_contents("php://input"), true);
+// $datas = json_decode(file_get_contents("php://input"), true);
+
+
+$datas = file_get_contents("php://input");
+
+print_r($datas);
 
 // on recupére toutes les données du formulaire et on les deballes dans ce tableau
 // de cette façon on les assugnes à des customs

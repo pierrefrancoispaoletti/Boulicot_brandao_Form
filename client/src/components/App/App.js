@@ -66,6 +66,7 @@ function App() {
   const [adresseChantier, setAdresseChantier] = useState("");
   const [tableau, setTableau] = useState([]);
   const [observation, setObservation] = useState("");
+
   let dataModelForTableau = {
     repere: { value: "", type: "number" },
     hauteur: { value: "", type: "number" },
@@ -101,7 +102,7 @@ function App() {
       adresseChantier: adresseChantierFromDatas,
       tableau: tableauFromDatas,
       observation: observationFromDatas,
-    } = JSON.parse(documentDatas);
+    } = documentDatas;
     setClient({ ...clientFromDatas });
     setMatiere(matiereFromDatas);
     setObservation(observationFromDatas);

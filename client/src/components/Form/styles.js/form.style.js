@@ -7,6 +7,8 @@ const Wrapper = styled.div`
   flex-wrap: wrap;
 `;
 
-const FormStyled = styled.form``;
+const FormStyled = styled.form`
+  padding: 30px 60px;
+`;
 
 export { Wrapper, FormStyled };

@@ -26,5 +26,5 @@ $encodedUser = json_encode($user);
 // $encodedDocumentEdited = json_encode($Document);
 
 // on fait descendre l'user id pour y avoir acces dans l'application
-echo "<script type='text/javascript'>  userId = {$encodedUser} ;documentDatas={$dataFromBd}; Res_Id={$Res_Id} ;</script>  </script>";
+echo "<script type='text/javascript'>  userId = {$encodedUser} ;documentDatas={$dataFromBd};Res_Id={$Res_Id}</script>";
 require __DIR__ . '/react/index.html';

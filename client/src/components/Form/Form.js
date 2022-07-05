@@ -29,6 +29,12 @@ const Form = ({
       url: `traitement.php/${edit ? "?Res_Id=" + Res_Id : ""}`,
       data: datas,
     });
+
+    if (response.data.status === "OK") {
+      setTimeout(() => {
+        window.close();
+      }, 1000);
+    }
   };
 
   const handleSubmit = (e) => {
